@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx directus start"
+    "start": "nodemon --exec npx directus start",
+    "link": "directus-extension link"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,11 @@
   "dependencies": {
     "directus": "^9.16.1",
     "mysql": "^2.18.1"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "watch": [
+    "extensions/"
+  ]
 }
